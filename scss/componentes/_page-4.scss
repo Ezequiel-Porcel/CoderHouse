@@ -1,0 +1,68 @@
+
+/* Css de la pagina indumentaria.html */
+
+section{
+	.titulo__ropa{
+		background-color: rgba(255, 255, 255, 0.4);
+		margin-top: 74px;
+		padding: 60px;
+		font-size: 40px;
+		@media only screen and (max-width: 450px) {
+			font-size: 25px;
+			padding: 20px;
+		}
+	}
+	.seccion__indumentaria{
+		padding: 50px;
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 90px;
+		row-gap: 10px;
+		margin: 50px;
+		background-color: rgba(0, 0, 0, 0.3);
+		border-radius: 30px;
+		@media only screen and (max-width: 450px) {
+			padding: 30px;
+			padding-bottom: 90px;
+			margin: 5px;
+			display: grid;
+			grid-template-rows: repeat(4, 1fr);
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.fotolarga1{
+			@media only screen and (max-width:450px) {
+				display: none;
+			}
+		}
+		.indumentaria{
+			position:relative;
+			.indumentaria__imagen{
+				bottom: 0px;
+				width: 300px;
+				@media only screen and (max-width: 450px) {
+					width: 100%;
+				}
+			}
+			.indumentaria__titulo{
+				position: relative;
+				bottom: 0px;
+				color: #ffffff;
+				background-color: rgba(0, 0, 0, 0.6);
+				width: 300px;
+				padding: 5px 0;
+				font-weight: 200;
+				font-size: 20px;
+				@media only screen and (max-width: 450px) {
+					font-size: 15px;
+					width: 100%;
+				}
+			}
+			@media only screen and (max-width: 450px) {
+				height: 280px;
+				padding: 10px;
+				
+			}
+		}
+	}
+}
